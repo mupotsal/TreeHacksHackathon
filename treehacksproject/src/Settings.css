@@ -1,0 +1,15 @@
+.SettingsBackground{
+  background-image: url('SettingsBackground.png');
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+}
+
+.AboutMeInfo{
+  width: 500px;
+  height: 100px;
+  word-wrap: break-word;
+}
+
+input{
+  text-align: left;
+}

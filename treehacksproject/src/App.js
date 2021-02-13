@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Settings from './Settings.js'
 
 
 
@@ -20,9 +21,10 @@ class App extends Component {
 
   render() {
     return (
+
       <html>
         <title>Boogaloo Login</title>
-          <body>
+          <body class="LoginBackground">
 
 
 
@@ -46,7 +48,8 @@ class App extends Component {
               </form>
 
             </div>
-
+            <Settings>
+            </Settings>
           </body>
       </html>
 

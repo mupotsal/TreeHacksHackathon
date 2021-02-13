@@ -45,7 +45,7 @@
 
 .Login{
   text-align: center;
-  padding: 200px;
+  padding: 280px;
 }
 
 .box{
@@ -57,7 +57,7 @@
   text-align: left;
 }
 
-body{
+.LoginBackground{
   background-image: url('KidsHavingFun.jpg');
   background-repeat: no-repeat;
   background-size: 100% 150%;
