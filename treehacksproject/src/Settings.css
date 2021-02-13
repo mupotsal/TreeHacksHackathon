@@ -1,14 +1,88 @@
-.SettingsBackground{
-  background-image: url('SettingsBackground.png');
+.AboutMeInfo{
+  background-image: url('Images/SettingsBackground.png');
   background-repeat: no-repeat;
   background-size: 100% 150%;
+  text-align: center;
 }
 
-.AboutMeInfo{
+body{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+h2{
+  padding: 25px;
+  color: purple;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.Info{
   width: 500px;
   height: 100px;
-  word-wrap: break-word;
+  margin: auto;
+  background-image: url('Images/ButtonBackground.png');
+  background-size: 100% 100%;
 }
+
+/*
+.ProfilePicture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+*/
+
+/*
+.AboutMeInfo{
+  text-align: center;
+  width: 500px;
+  height: 100px;
+  margin: auto;
+  //word-wrap: break-word;
+}
+*/
+
+.Submit{
+//transform: translate(200px, 10px);
+font-size: 20px;
+border-radius: 12px;
+background: url("Images/ButtonBackground.png");
+background-size: 100% 100%;
+}
+
+.Logout{
+  transform: translate(0px, 20px);
+}
+
+.NavigationButtons{
+  //float: left;
+  font-size: 20px;
+  border-radius: 12px;
+  background: url("Images/ButtonBackground.png");
+  background-size: 100% 100%;
+  //position: absolute;
+  //bottom: 0;
+}
+
+/*
+nav{
+  position: fixed;
+  bottom: 0;
+  //width: 100%;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //padding: 20;
+}
+*/
 
 input{
   text-align: left;

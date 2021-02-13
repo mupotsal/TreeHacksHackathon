@@ -37,10 +37,18 @@
   }
 }
 
+body{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
 .WelcomeFormat{
   text-align: center;
-  background: red;
-  opacity: 0.9;
+  background: Purple;
+  opacity: 0.85;
 }
 
 .Login{
@@ -58,7 +66,7 @@
 }
 
 .LoginBackground{
-  background-image: url('KidsHavingFun.jpg');
+  background-image: url('Images/KidsHavingFun.jpg');
   background-repeat: no-repeat;
   background-size: 100% 150%;
 }
