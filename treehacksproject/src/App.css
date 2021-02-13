@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.WelcomeFormat{
+  text-align: center;
+  background: red;
+  opacity: 0.9;
+}
+
+.Login{
+  text-align: center;
+  padding: 200px;
+}
+
+.box{
+  background: white;
+  opacity: 0.5;
+}
+
+.but{
+  text-align: left;
+}
+
+body{
+  background-image: url('KidsHavingFun.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+}
