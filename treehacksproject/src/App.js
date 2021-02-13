@@ -1,14 +1,21 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { firestore } from "./firebase"
 
 import withFirebaseAuth from 'react-with-firebase-auth'
 import firebase from 'firebase';
 import firebaseConfig from './firebase';
-
-
+import 'firebase/firestore'
 require('firebase/auth')
+
+
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firestore = firebaseApp.firestore();
+const firebaseAppAuth = firebaseApp.auth();
+const providers = {
+  googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
 
 
 class App extends Component {
@@ -25,8 +32,6 @@ class App extends Component {
   componentWillMount() {
       this.callAPI();
   }
-
-
 
   render() {
 
@@ -69,14 +74,6 @@ class App extends Component {
     );
   }
 }
-
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-
-const firebaseAppAuth = firebaseApp.auth();
-const providers = {
-  googleProvider: new firebase.auth.GoogleAuthProvider(),
-};
-
 
 export default withFirebaseAuth({providers,
   firebaseAppAuth,})(App);
