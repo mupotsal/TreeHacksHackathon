@@ -28,7 +28,6 @@ class App extends Component {
         <Settings>
         </Settings>
 
-
       </html>
 
     );

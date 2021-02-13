@@ -32,7 +32,7 @@ class Settings extends Component {
                 <button onclick="MainPage.js" className="NavigationButtons" type="button" name="MainPageButton"><a href="MainPage.js">Main Page</a></button>
                 <br></br>
                 <br></br>
-                <button onclick="Login.js" className="NavigationButtons" type="button" name="Logout"><a href="Login.js">Logout</a></button>
+                <button onclick="Login.js" className="NavigationButtons" type="button" name="Logout"><a href="#Login">Logout</a></button>
               </div>
 
             </div>
