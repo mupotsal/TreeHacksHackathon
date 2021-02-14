@@ -1,7 +1,7 @@
 
 import React from "react";
 import { render } from "react-dom";
-import './App.css';
+//import './App.css';
 // get our fontawesome imports
 import './Home.css';
 
@@ -38,6 +38,7 @@ class Home extends React.Component {
 
   render() {
     return (
+      <html>
         <div>
 
 
@@ -56,6 +57,9 @@ class Home extends React.Component {
                   transform="grow-50 right-1080 down-35.2"
                   fixedWidth />
 
+
+                <a className="Button5" href="#Loginbackground" target="_blank">Log Out</a><br></br>
+                
                 <a className="Button4" href="https://www.parents.com/fun/arts-crafts/kid/" target="_blank">Profile</a><br></br>
 
               </h1>
@@ -269,7 +273,7 @@ class Home extends React.Component {
           </body>
         </div>
 
-
+      </html>
 
     );
   }

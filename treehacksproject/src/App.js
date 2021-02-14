@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <html>
         <title>Boogaloo Login</title>
-          <body>
+          <body class="Loginbackground">
             <div class="WelcomeFormat">
               <h1>Welcome to Boogaloo!</h1>
               <i>Keeping commutities connected  </i>
