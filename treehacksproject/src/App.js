@@ -48,7 +48,8 @@ class App extends Component {
     return (
       <html>
         <title>Boogaloo Login</title>
-          <body>
+
+        <body class="Loginbackground">
 
 
 
