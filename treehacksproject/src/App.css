@@ -40,12 +40,12 @@
 .WelcomeFormat{
   text-align: center;
   background: red;
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
 .Login{
   text-align: center;
-  padding: 200px;
+  padding: 500px;
 }
 
 .box{

@@ -5,6 +5,14 @@ import './App.css';
 // get our fontawesome imports
 import './Home.css';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import ImageUpload from "../../ImageUpload/index.js"
+
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
@@ -64,6 +72,25 @@ class Home extends React.Component {
                   target="_blank">Share a Photo</a><br></br>
 
                 <a className="Button3" href="https://www.parents.com/fun/arts-crafts/kid/" target="_blank">Arts and Crafts</a><br></br>
+            
+                <Router>
+                  <div>
+                    <ul>
+                      <li>
+                        <Link to="/imageupload">Post</Link>
+                      </li>
+                    </ul>
+                    <hr />
+                    <Switch>
+                      <Route path="/imageupload">
+                        <ImageUpload></ImageUpload>
+                      </Route>
+                    </Switch>
+                  </div>
+                </Router>
+            
+            
+            
             </header>
 
 

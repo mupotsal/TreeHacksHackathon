@@ -1,3 +1,8 @@
+import firebase from 'firebase';
+import 'firebase/firestore'
+import 'firebase/storage'
+require('firebase/auth')
+
 var firebaseConfig = {
   apiKey: "AIzaSyD-l95rGx_4KTY4cAgfd3ILkpTap2q9tho",
   authDomain: "treehacksproject-f586f.firebaseapp.com",
@@ -10,4 +15,17 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 
-export default firebaseConfig;
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firestore = firebaseApp.firestore();
+const firebaseAppAuth = firebaseApp.auth();
+const storage = firebaseApp.storage();
+
+const providers = {
+  googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
+
+
+export {
+  providers, storage, firestore, firebaseAppAuth, firebaseApp as default
+}
+//export default firebaseConfig;
