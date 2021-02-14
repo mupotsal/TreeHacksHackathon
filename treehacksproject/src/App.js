@@ -2,6 +2,13 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { render } from "react-dom";
+import Home from "./components/Home/Home.js"
+
+
+
 //The following part does the Google Authentication for Login
 import withFirebaseAuth from 'react-with-firebase-auth'
 import firebase from 'firebase';
@@ -11,6 +18,7 @@ require('firebase/auth')
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const firestore = firebaseApp.firestore();
 const firebaseAppAuth = firebaseApp.auth();
+
 const providers = {
   googleProvider: new firebase.auth.GoogleAuthProvider(),
 };
@@ -47,20 +55,27 @@ class App extends Component {
             <div class="WelcomeFormat">
               <h1>Welcome to Boogaloo!</h1>
               <i>Keeping commutities connected</i>
+              {
+                user
+                  ? <button onClick={signOut}>Sign out</button>
+                  : <button onClick={signInWithGoogle}>Sign in with Google</button>
+
+
+              }
             </div>
 
             <div class="Login">
             <div className="App">
           {
+
             user
-              ? <p>Hello, {user.displayName}</p>
+              ? <p> <Home></Home> </p>
               : <p>Please sign in.</p>
           }
-          {
-            user
-              ? <button onClick={signOut}>Sign out</button>
-              : <button onClick={signInWithGoogle}>Sign in with Google</button>
-          }
+
+
+        <div>
+        </div>
       </div>
 
             </div>
