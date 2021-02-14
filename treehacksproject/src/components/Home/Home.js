@@ -4,10 +4,12 @@ import { render } from "react-dom";
 // import './App.css';
 // get our fontawesome imports
 import './Home.css';
+import postPage from '../../postPage'
 
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
 
 
 // Function for button
@@ -32,7 +34,6 @@ class Home extends React.Component {
     return (
       <html>
         <div>
-
 
           <body className="Home">
 
@@ -63,8 +64,16 @@ class Home extends React.Component {
 
                 <a className="Button1" href="https://www.websudoku.com/" target="_blank">Play a Game</a><br></br>
 
-                <a className="Button2" href="https://www.squarespace.com/tour/photography-websites/?channel=pnb&subchannel=go&campaign=pnb-dr-go-us-en-verticals-e&subcampaign=(verticals-photography_photo-hosting-website_e)&utm_source=google&utm_medium=pnb&utm_campaign=pnb-dr-go-us-en-verticals-e&utm_term=photo%20hosting%20website&gclid=CjwKCAiA65iBBhB-EiwAW253W5rcxRLg04wdlHkkY-iDTREDjz-W3H4WKwXJrS-4gmXf703HHSCCxBoCd2gQAvD_BwE"
-                  target="_blank">Share a Photo</a><br></br>
+                <div>
+                <p> Is this going to work?</p>
+                <postPage></postPage>
+                </div>
+
+
+                <div>
+                  What is Happening here?
+                </div>
+
 
                 <a className="Button3" href="https://www.parents.com/fun/arts-crafts/kid/" target="_blank">Arts and Crafts</a><br></br>
             </header>
