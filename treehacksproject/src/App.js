@@ -245,68 +245,6 @@ render(<App />, document.getElementById("root"));
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from "react";
-// import './App.css';
-
-
-// function App() {
-//   return (
-//     <html>
-//       <title>Home Page</title>
-
-//       <head>
-//         {/* <h1>Home Page</h1> */}
-
-//       </head>
-
-//       <body>
-
-//         <div className="container">
-
-//           <div className="image-gallery">
-
-            
-
-//           </div>
-
-
-//         </div>
-
-
-
-//       </body>
-
-//       <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-//     </html>
-//   );
-
-// };
-
-// export default App;
- 
 export default App;
 
 
