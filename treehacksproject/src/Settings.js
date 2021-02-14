@@ -17,8 +17,9 @@ class Settings extends Component {
               <h2>About Me</h2>
               <br></br>
             <div>
-
+              <a href="LinkToProfilePicUpload">
                 <img className="ProfilePicture" src={require("./Images/ProfilePicture.png").default} height={200} width={200}></img>
+              </a>
               </div>
               <br></br>
                 <input className="Info" type="text"></input>
