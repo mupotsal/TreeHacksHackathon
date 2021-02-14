@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.header1{
+  color: rgb(0, 87, 128);
+  position:"center";
+
+
+}
+
+.Button1{
+  font-size: 18px;
+  text-decoration:none;
+  color:#926239;
+  border:#926239 1px solid;
+  padding:10px 20px;
+  border-radius:10px;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+.Button2{
+  font-size: 18px;
+  text-decoration:none;
+  color:#926239;
+  border:#926239 1px solid;
+  padding:10px 20px;
+  border-radius:10px;
+  margin-left: 400px;
+  
+
+}
+
+.Button3{
+  font-size: 18px;
+  text-decoration:none;
+  color:#926239;
+  border:#926239 1px solid;
+  padding:10px 20px;
+  border-radius:10px;
+  margin-left: 230px;
+  margin-top: auto;
+  
+
+}
+
+.Button1:hover{
+  background:#92398b;
+  color:#fff;
+}
+
+.Button2:hover{
+  background:#926239;
+  color:#fff;
+} 
+
+.Button3:hover{
+  background:#39927c;
+  color:#fff;
+} 
