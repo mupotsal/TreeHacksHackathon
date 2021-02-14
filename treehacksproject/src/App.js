@@ -1,15 +1,13 @@
+
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+//The following part does the Google Authentication for Login
 import withFirebaseAuth from 'react-with-firebase-auth'
 import firebase from 'firebase';
 import firebaseConfig from './firebase';
 import 'firebase/firestore'
 require('firebase/auth')
-
-
-
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const firestore = firebaseApp.firestore();
 const firebaseAppAuth = firebaseApp.auth();
@@ -19,7 +17,6 @@ const providers = {
 
 
 class App extends Component {
-
   constructor(props) {
       super(props);
       this.state = { apiResponse: "" };
